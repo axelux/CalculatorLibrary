@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build1:
     docker:
       - image: cimg/python:3.10.7
       
@@ -28,4 +28,4 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - build
+      - build1
